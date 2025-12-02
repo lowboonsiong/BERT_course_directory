@@ -1,0 +1,25 @@
+# --- Data Handling and Science Stack ---
+pandas
+numpy
+openpyxl  # For reading/writing Excel files with pandas
+
+# --- Visualization ---
+matplotlib
+seaborn
+
+# --- Machine Learning and NLP ---
+scikit-learn
+nltk
+joblib
+
+# --- Deployment ---
+streamlit
+
+# --- Deep Learning (TensorFlow/Keras) Stack ---
+# Use the latest stable versions for compatibility.
+tensorflow
+tensorflow-hub
+tensorflow-text
+keras-nlp
+keras
+#pickle5

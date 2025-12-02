@@ -1,1 +1,0 @@
-# BERT_course_directory
