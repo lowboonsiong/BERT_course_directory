@@ -17,7 +17,7 @@ streamlit
 
 # --- Deep Learning (TensorFlow/Keras) Stack ---
 # Use the latest stable versions for compatibility.
-tensorflow==2.10.0
+tensorflow==2.16.1
 tensorflow-hub==0.16.1
 tensorflow-text==2.19.0
 keras-nlp==0.23.0
