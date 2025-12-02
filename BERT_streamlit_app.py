@@ -113,44 +113,50 @@ with st.container(border=True):
         ihl_status = st.selectbox("Institutes of Higher Learning (IHL)", ('IHL', 'NON-IHL'), index=0)
 
     # --- Numerical Inputs ---
-    col3, col4, col5 = st.columns(3)
+    col3, col4 = st.columns(2)
 
     with col3:
-        # Slider for course ratings
-        courseratings_stars = st.slider(
-            "Course Ratings", 
-            min_value=0.0, max_value=5.0, value=4.5, step=0.1
-        )
         # Number input for full course fee
         full_course_fee = st.number_input(
             "Full Course Fee ($)", 
             min_value=0.0, value=1461.0, step=10.0, format="%.2f"
         )
-        
     with col4:
-        # Slider for job impact ratings
-        jobcareer_impact_stars = st.slider(
-            "Job/Career Impact Rating", 
-            min_value=0.0, max_value=5.0, value=4.0, step=0.1
-        )
         # Number input for subsidized fee
         course_fee_after_subsidies = st.number_input(
             "Fee After Subsidies ($)", 
             min_value=0.0, value=438.3, step=10.0, format="%.2f"
-        )
-        
-    with col5:
+        ) 
+       
+    col7, col8 = st.columns(2) 
+    with col7:
         # Number of hours
         number_of_hours = st.number_of_hours = st.number_input(
             "Total Training Hours",
             min_value=1, value=36, step=1
         )
+    
+    with col8:    
         # Training commitment dropdown
         training_commitment = st.selectbox(
             "Training Commitment", 
             ('Full Time', 'Part Time'), index=0
         )
 
+    col5, col6 = st.columns(2)
+    with col5:
+        # Slider for course ratings
+        courseratings_stars = st.slider(
+            "Course Ratings", 
+            min_value=0.0, max_value=5.0, value=4.5, step=0.1
+        )
+    with col6:
+        # Slider for job impact ratings
+        jobcareer_impact_stars = st.slider(
+            "Job/Career Impact Rating", 
+            min_value=0.0, max_value=5.0, value=4.0, step=0.1
+        )
+    
     # --- Textual Inputs (Full Width) ---
     about_this_course = st.text_area(
         "About This Course (Descriptions)", 
@@ -193,7 +199,6 @@ if st.button("Predict Student Enrollment", type="primary", use_container_width=T
 
         # 3. Display Results
         st.success("✅ Prediction Complete")
-        st.balloons()
         
         st.metric(
             label="Predicted Number of Students to Attend",
