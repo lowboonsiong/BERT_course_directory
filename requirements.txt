@@ -68,9 +68,9 @@ streamlit==1.51.0
 tenacity==9.1.2
 tensorboard==2.19.0
 tensorboard-data-server==0.7.2
-tensorflow==2.19.1
+tensorflow==2.16.1
 tensorflow-hub==0.16.1
-tensorflow-text==2.19.0
+tensorflow-text==2.16.1
 termcolor==3.2.0
 tf_keras==2.19.0
 threadpoolctl==3.6.0
