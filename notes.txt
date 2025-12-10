@@ -1,0 +1,9 @@
+Data Analysis , SQL, Tableau ,Power BI & Excel with  Real Projects
+
+About the Course
+This course takes you through the full analytics process, emphasizing professional data cleaning and rigorous exploratory data analysis. You'll master visualization techniques to communicate insights effectively and "tell the story" in your data. Crucially, we train you in writing well-documented programming—not "vibe coding"—to ensure professional rigor. Our dedicated trainer station in the lab provides personalized, hands-on support for your capstone project, guaranteeing you graduate job-ready for any professional analyst position.
+
+What you will learn
+You will achieve proficiency in Structured Query Language (SQL) for efficient data querying. Advance your statistical analysis and data manipulation skills using Microsoft Excel, and establish foundational programming with Python (specifically the Pandas library) for data tasks and create professional reports and interactive dashboards using Tableau or Microsoft Power BI. You will also gain essential knowledge in Data Ethics and Governance frameworks such as PDPA. 
+
+This course is designed based on GovTech requirment to be a Data analyst. 

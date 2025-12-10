@@ -12,7 +12,6 @@ except ImportError:
     # Exit early if TensorFlow is not available, cannot run the core logic.
     st.stop()
 
-
 # --- Configuration and Caching ---
 
 # Define the paths as provided by the user
@@ -161,7 +160,7 @@ with tab1:
         col1, col2 = st.columns(2)
         
         with col1:
-            coursetitle = st.text_input("Course Title", "Engineering Ethics")
+            coursetitle = st.text_input("Course Title", "(SCTP) Certificate in Data Analytics with Artificial Intelligence (Full-time) (TA-eligible)")
             
         with col2:
             ihl_status = st.selectbox("Institutes of Higher Learning (IHL)", ('IHL', 'NON-IHL'), index=0)
@@ -172,19 +171,19 @@ with tab1:
         with col3:
             full_course_fee = st.number_input(
                 "Full Course Fee ($)", 
-                min_value=0.0, value=1461.0, step=10.0, format="%.2f"
+                min_value=0.0, value=16000.0, step=10.0, format="%.2f"
             )
         with col4:
             course_fee_after_subsidies = st.number_input(
                 "Fee After Subsidies ($)", 
-                min_value=0.0, value=438.3, step=10.0, format="%.2f"
+                min_value=0.0, value=4800.0, step=10.0, format="%.2f"
             ) 
             
         col7, col8 = st.columns(2) 
         with col7:
             number_of_hours = st.number_input(
                 "Total Training Hours",
-                min_value=1, value=36, step=1
+                min_value=1, value=480, step=1
             )
         
         with col8:    
@@ -197,24 +196,24 @@ with tab1:
         with col5:
             courseratings_stars = st.slider(
                 "Course Ratings", 
-                min_value=0.0, max_value=5.0, value=4.5, step=0.1
+                min_value=0.0, max_value=5.0, value=4.2, step=0.1
             )
         with col6:
             jobcareer_impact_stars = st.slider(
                 "Job/Career Impact Rating", 
-                min_value=0.0, max_value=5.0, value=4.0, step=0.1
+                min_value=0.0, max_value=5.0, value=0.0, step=0.1
             )
         
         # --- Textual Inputs (Full Width) ---
         about_this_course = st.text_area(
             "About This Course (Descriptions)", 
-            "Nowadays, technology has a pervasive and profound impact on everyday life, where engineers play a crucial role in its development. It is therefore extremely important that engineers understand the importance of safety, health, and welfare of the public, when developing this technology. They must be morally committed and equipped to tackle any ethical issues they may encounter. This course aims at training the student to reach such a status through discussions and typical case studies where real examples are thoroughly discussed.",
+            "Data Analytics is paramount in organisation in drawing meaningful and actionable insights from raw data to drive smart decision making. This course is designed to empower learners to effectively perform data exploratory, data modelling, data transformation and machine learning techniques to analyze complex datasets and communicate actionable insights through data visualization to stakeholders. Learners will demonstrate proficiency in analysing text data using text analytics and generative AI techniques and delivering data products as part of the Captone delivery to support Data and AI initiatives in organisation.",
             height=150
         )
 
         what_you_learn = st.text_area(
             "What You Will Learn (Skills)", 
-            "Ethics and Professionalism. Moral Choices and Ethical Dilemmas. Codes of Ethics. Moral Frameworks. Ethics as Social Experimentation. Safety and Risk. Assessing and Reducing Risk. Workplace Responsibilities and Rights. Truth and Truthfulness. Computer Ethics. Environmental Ethics;",
+            "Data Analytics is paramount in organisation in drawing meaningful and actionable insights from raw data to drive smart decision making. This course is designed to empower learners to effectively perform data exploratory, data modelling, data transformation and machine learning techniques to analyze complex datasets and communicate actionable insights through data visualization to stakeholders. Learners will demonstrate proficiency in analysing text data using text analytics and generative AI techniques and delivering a data product as part of the Capstone delivery to support Data and AI initiatives in organisation. Upon successful completion of this course, the participants will be able to: 1. Describe key emerging data analytics trends and its applications in industries. 2. Design Conceptual and Logical Data Models to support data-mart development. 3. Explore data of its structure and characteristics to improve data quality. 4. Develop data transformation program to prepare data for analysis. 5. Apply machine learning techniques to extract insights from data. 6. Develop Visualisation to communicate insights using analytical tools. 7. Deploy Data Product with Generative AI Models to support Data analytics initiatives.",
             height=150
         )
 
@@ -257,7 +256,7 @@ with tab1:
 
 # --- TAB 2: Mass Prediction (New Logic) ---
 with tab2:
-    st.header("Upload CSV for Mass Prediction 📊")
+    st.header("Upload CSV for Mass Prediction")
     st.markdown("""
         Please ensure your CSV file contains the following columns exactly: 
         `coursetitle`, `ihl_status`, `courseratings_stars`, `jobcareer_impact_stars`, 
